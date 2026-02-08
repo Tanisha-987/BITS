@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <div className="animate-fade-in">
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-12">
+      <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Contact Us</h1>
           <p className="text-lg opacity-90">Get in touch with us</p>
@@ -36,8 +36,8 @@ const Contact = () => {
           <div>
             <h2 className="text-3xl font-bold text-primary-800 mb-6">Get In Touch</h2>
             <p className="text-gray-700 mb-8 leading-relaxed">
-              We're here to help and answer any question you might have. We look forward to 
-              hearing from you. Please feel free to contact us during our office hours or 
+              We're here to help and answer any question you might have. We look forward to
+              hearing from you. Please feel free to contact us during our office hours or
               fill out the contact form.
             </p>
 
@@ -53,9 +53,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Address</h3>
                   <p className="text-gray-600">
-                    123 Education Street<br />
-                    Knowledge City, State - 123456<br />
-                    India
+                    Opp. MRM Honda agency,adj.. Sec 23 huda,bhiwani
                   </p>
                 </div>
               </div>
@@ -69,8 +67,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Phone</h3>
                   <p className="text-gray-600">
-                    Office: +91-1234567890<br />
-                    Admission: +91-0987654321
+                    Office: +91-9992222480<br />
                   </p>
                 </div>
               </div>
@@ -84,8 +81,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Email</h3>
                   <p className="text-gray-600">
-                    General: info@abchighschool.edu<br />
-                    Admission: admission@abchighschool.edu
+                    General: bisbhiwani@gmail.com<br />
                   </p>
                 </div>
               </div>
@@ -180,17 +176,13 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-primary-800 mb-6 text-center">Find Us Here</h2>
           <div className="bg-gray-200 rounded-lg overflow-hidden shadow-lg" style={{ height: '400px' }}>
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-100 to-blue-100">
-              <div className="text-center">
-                <svg className="w-16 h-16 text-primary-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p className="text-gray-700 font-semibold mb-2">Google Map Location</p>
-                <p className="text-sm text-gray-600">
-                  123 Education Street, Knowledge City<br />
-                  State - 123456
-                </p>
+              <div className="w-full h-full rounded-2xl overflow-hidden shadow-lg relative">
+
+                {/* Map iframe */}
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.913714246991!2d76.1525642!3d28.811645100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391266c1ac69cd27%3A0x11ea2af43dd3c24!2sBits%20International%20School!5e0!3m2!1sen!2sin!4v1770524370723!5m2!1sen!2sin" height="100%" width="100%"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
               </div>
+
             </div>
           </div>
         </section>

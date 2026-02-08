@@ -4,7 +4,7 @@ const MandatoryDisclosures = () => {
   return (
     <div className="animate-fade-in">
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-12">
+      <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Mandatory Public Disclosures</h1>
           <p className="text-lg opacity-90">As per CBSE guidelines</p>
@@ -19,13 +19,13 @@ const MandatoryDisclosures = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { label: 'School Name', value: 'BITS International School' },
-                { label: 'Affiliation Number', value: '1234567' },
-                { label: 'School Code', value: '12345' },
-                { label: 'Principal Name', value: 'Dr. Rajesh Kumar' },
+                { label: 'Affiliation Number', value: '531021' },
+                { label: 'School Code', value: '90968' },
+                { label: 'Principal Name', value: 'ASHOK KUMAR MUNJAL' },
                 { label: 'Principal Qualification', value: 'M.A., B.Ed., Ph.D.' },
-                { label: 'Year of Establishment', value: '2004' },
-                { label: 'Email ID', value: 'info@abchighschool.edu' },
-                { label: 'Contact Number', value: '+91-1234567890' }
+                { label: 'Year of Establishment', value: '2010' },
+                { label: 'Email ID', value: 'bisbhiwani@gmail.com' },
+                { label: 'Contact Number', value: '+91-9992222480' }
               ].map((item, index) => (
                 <div key={index} className="border-l-4 border-primary-500 pl-4 py-2">
                   <p className="text-sm text-gray-600 mb-1">{item.label}</p>
@@ -51,12 +51,9 @@ const MandatoryDisclosures = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   {[
-                    { name: 'Mr. Ashok Mehta', designation: 'Chairperson' },
-                    { name: 'Mrs. Sunita Verma', designation: 'Vice Chairperson' },
-                    { name: 'Dr. Rajesh Kumar', designation: 'Principal (Ex-officio)' },
-                    { name: 'Mr. Ramesh Singh', designation: 'Parent Representative' },
-                    { name: 'Mrs. Kavita Sharma', designation: 'Parent Representative' },
-                    { name: 'Mr. Vijay Kumar', designation: 'Teacher Representative' }
+                    { name: 'Mr. Sashi Ranjan parmar Ji', designation: 'Chairman' },
+                    { name: 'Mr. Rishipal Ji', designation: 'Vice Chairman' },
+                    { name: 'Mr. Ashok Kumar Munjal', designation: 'Director' },
                   ].map((member, index) => (
                     <tr key={index} className="hover:bg-gray-50">
                       <td className="px-6 py-4 text-sm text-gray-700">{index + 1}</td>

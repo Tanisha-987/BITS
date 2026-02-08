@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from "../assets/logo.png"
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +24,8 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">ABC</span>
+            <div className="w-12 h-12 rounded-full flex items-center justify-center">
+              <img src={logo} alt='logo'/>
             </div>
             <div>
               <h1 className="text-2xl font-bold text-primary-800">BITS International School</h1>
@@ -54,7 +55,7 @@ const Navigation = () => {
                 to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                   isActive(item.path)
-                    ? 'bg-primary-600 text-white'
+                    ? 'bg-gradient-to-r from-primary-400 to-primary-900 text-white'
                     : 'text-gray-700 hover:bg-primary-50 hover:text-primary-700'
                 }`}
               >

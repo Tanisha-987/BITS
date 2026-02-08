@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import slide1 from "../assets/slide1.jpg";
-import slide2 from "../assets/slide2.jpg";
-import slide3 from "../assets/slide3.jpg";
+import slide1 from "../assets/2.jpg";
+import slide2 from "../assets/1.jpg";
+import slide3 from "../assets/3.jpg";
+import slide4 from "../assets/4.jpeg";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,6 +22,11 @@ const Home = () => {
       title: 'Holistic Development',
       subtitle: 'Nurturing Mind, Body & Spirit',
       image: slide3
+    },
+    {
+      title: 'Holistic Development',
+      subtitle: 'Nurturing Mind, Body & Spirit',
+      image: slide4
     }
   ];
 
@@ -153,14 +159,14 @@ const Home = () => {
         </div>
 
         {/* Quick Stats */}
-        <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg p-8 md:p-12 text-white">
+        <div className="bg-gradient-to-r from-primary-400 to-primary-900 rounded-lg p-8 md:p-12 text-white">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">20+</div>
+              <div className="text-4xl font-bold mb-2">15+</div>
               <div className="text-sm opacity-90">Years of Excellence</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">1500+</div>
+              <div className="text-4xl font-bold mb-2">800+</div>
               <div className="text-sm opacity-90">Students</div>
             </div>
             <div>

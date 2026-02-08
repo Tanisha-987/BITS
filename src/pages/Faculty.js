@@ -1,103 +1,132 @@
-import React from 'react';
 
 const Faculty = () => {
   const teachers = [
     {
-      name: 'Dr. Rajesh Kumar',
-      subject: 'Principal',
+      name: 'ASHOK KUMAR MUNJAL',
+      post: 'Principal',
       qualification: 'M.A., B.Ed., Ph.D.'
     },
     {
-      name: 'Mrs. Priya Sharma',
-      subject: 'Vice Principal',
-      qualification: 'M.Sc., B.Ed.'
+      name: 'SONIA',
+      post: 'PGT',
+      qualification: 'M.Com, B.Ed'
     },
     {
-      name: 'Mr. Amit Singh',
-      subject: 'Mathematics',
-      qualification: 'M.Sc. Mathematics, B.Ed.'
+      name: 'EKTA SHARMA',
+      post: 'PGT',
+      qualification: 'M.Sc, B.Ed'
     },
     {
-      name: 'Mrs. Neha Gupta',
-      subject: 'English',
-      qualification: 'M.A. English, B.Ed.'
+      name: 'SABHYA',
+      post: 'PGT',
+      qualification: 'M.Sc, B.Ed'
     },
     {
-      name: 'Dr. Suresh Patel',
-      subject: 'Physics',
-      qualification: 'M.Sc. Physics, Ph.D., B.Ed.'
+      name: 'ASHA',
+      post: 'PGT',
+      qualification: 'M.A, B.Ed'
     },
     {
-      name: 'Mrs. Kavita Reddy',
-      subject: 'Chemistry',
-      qualification: 'M.Sc. Chemistry, B.Ed.'
+      name: 'PRATIBHA',
+      post: 'PGT',
+      qualification: 'M.C.A , B.Ed.'
     },
     {
-      name: 'Mr. Ravi Verma',
-      subject: 'Biology',
-      qualification: 'M.Sc. Biology, B.Ed.'
+      name: 'JYOTI RANI',
+      post: 'PGT',
+      qualification: 'M.Sc, B.Ed'
     },
     {
-      name: 'Mrs. Sunita Joshi',
-      subject: 'Computer Science',
-      qualification: 'MCA, B.Ed.'
+      name: 'Chahat',
+      post: 'PGT',
+      qualification: 'M.Sc, B.Ed'
     },
     {
-      name: 'Mr. Vikram Malhotra',
-      subject: 'History',
-      qualification: 'M.A. History, B.Ed.'
+      name: 'VINITA',
+      post: 'PGT',
+      qualification: 'M.A., B.Ed.'
     },
     {
-      name: 'Mrs. Anjali Kapoor',
-      subject: 'Geography',
-      qualification: 'M.A. Geography, B.Ed.'
+      name: 'GOLDI SINGH',
+      post: 'TGT',
+      qualification: 'M.A., B.Ed.'
     },
     {
-      name: 'Mr. Deepak Yadav',
-      subject: 'Economics',
-      qualification: 'M.A. Economics, B.Ed.'
+      name: 'SANJANA',
+      post: 'PGT',
+      qualification: 'M.Sc, B.Ed'
     },
     {
-      name: 'Mrs. Pooja Agarwal',
-      subject: 'Commerce',
+      name: 'YAMAN',
+      post: 'PGT',
+      qualification: 'M.Com ,B.Ed'
+    },
+    {
+      name: 'ANJU',
+      post: 'PGT',
+      qualification: 'M.Sc, B.Ed'
+    },
+    {
+      name: 'NEELAM DEVI',
+      post: 'PRT',
+      qualification: 'M.A., B.Ed.'
+    },
+    {
+      name: 'MONIKA',
+      post: 'PRT',
+      qualification: 'M.A, B.Ed'
+    },
+    {
+      name: 'SUVEKA',
+      post: 'PRT',
       qualification: 'M.Com, B.Ed.'
     },
     {
-      name: 'Mr. Rahul Saxena',
-      subject: 'Physical Education',
-      qualification: 'M.P.Ed.'
+      name: 'MEENAKSHI',
+      post: 'PRT',
+      qualification: 'B.A., B.Ed.'
     },
     {
-      name: 'Mrs. Meena Desai',
-      subject: 'Hindi',
-      qualification: 'M.A. Hindi, B.Ed.'
+      name: 'ANITA TANWAR',
+      post: 'PGT',
+      qualification: 'M.A., B.Ed.'
     },
     {
-      name: 'Mr. Sanjay Thakur',
-      subject: 'Sanskrit',
-      qualification: 'M.A. Sanskrit, B.Ed.'
+      name: 'BABITA',
+      post: 'TGT',
+      qualification: 'M.C.A'
     },
     {
-      name: 'Mrs. Rekha Nair',
-      subject: 'Art & Craft',
-      qualification: 'B.F.A., Diploma in Education'
+      name: 'SHALINI',
+      post: 'TGT',
+      qualification: 'M.A., B.Ed.'
     },
     {
-      name: 'Mr. Arun Kumar',
-      subject: 'Music',
-      qualification: 'Sangeet Visharad, B.Ed.'
+      name: 'JYOTI',
+      post: 'PGT',
+      qualification: 'M.A., B.Ed.'
     },
     {
-      name: 'Mrs. Simran Kaur',
-      subject: 'Primary Teacher',
-      qualification: 'B.A., D.Ed.'
+      name: 'KARAN',
+      post: 'WELLNEES TEACHER',
+      qualification: 'B. pharma'
+    },
+    {
+      name: 'MANJU KUMARI',
+      post: 'ACCOUNTANT',
+      qualification: 'MBA'
+    },
+    {
+      name: 'SANJAY KUMAR',
+      post: 'LIBRARIAN',
+      qualification: 'M.LIB'
     }
   ];
 
   return (
     <div className="animate-fade-in">
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-12">
+      <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Our Faculty</h1>
           <p className="text-lg opacity-90">Meet our dedicated team of educators</p>
@@ -137,7 +166,7 @@ const Faculty = () => {
                 </div>
                 <div className="p-5 text-center">
                   <h3 className="text-lg font-bold text-gray-800 mb-1">{teacher.name}</h3>
-                  <p className="text-primary-600 font-semibold mb-2">{teacher.subject}</p>
+                  <p className="text-primary-600 font-semibold mb-2">{teacher.post}</p>
                   <p className="text-sm text-gray-600">{teacher.qualification}</p>
                 </div>
               </div>

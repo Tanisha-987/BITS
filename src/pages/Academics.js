@@ -4,7 +4,7 @@ const Academics = () => {
   return (
     <div className="animate-fade-in">
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-12">
+      <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Academics</h1>
           <p className="text-lg opacity-90">Excellence in education through comprehensive curriculum</p>
@@ -38,22 +38,22 @@ const Academics = () => {
               {
                 title: 'Primary Level (Classes I-V)',
                 description: 'Foundation building with focus on basic literacy, numeracy, and essential skills',
-                subjects: ['English', 'Hindi', 'Mathematics', 'Environmental Studies', 'Computer Science', 'Art & Craft', 'Physical Education']
+                subjects: ['English', 'Hindi', 'Mathematics', 'Environmental Studies', 'IT', 'Art & Craft', 'Physical Education','G.K.','Reasoning']
               },
               {
                 title: 'Middle Level (Classes VI-VIII)',
                 description: 'Expanding knowledge base with introduction to diverse subjects',
-                subjects: ['English', 'Hindi', 'Mathematics', 'Science', 'Social Science', 'Computer Science', 'Sanskrit/Third Language', 'Art Education', 'Physical Education']
+                subjects: ['English', 'Hindi', 'Mathematics', 'Science', 'Social Science', 'IT', 'Sanskrit/Third Language', 'Art Education', 'Physical Education','Reasoning']
               },
               {
                 title: 'Secondary Level (Classes IX-X)',
                 description: 'Board examination preparation with comprehensive subject coverage',
-                subjects: ['English', 'Hindi', 'Mathematics', 'Science', 'Social Science', 'Computer Applications', 'Physical Education', 'Additional Subject (Optional)']
+                subjects: ['English', 'Hindi', 'Mathematics', 'Science', 'Social Science', 'IT', 'Additional Subject (Optional)','Reasoning']
               },
               {
                 title: 'Senior Secondary (Classes XI-XII)',
                 description: 'Specialized streams for career-focused education',
-                subjects: ['Science Stream: Physics, Chemistry, Mathematics/Biology, English, Computer Science', 'Commerce Stream: Accountancy, Business Studies, Economics, English, Mathematics', 'Arts Stream: History, Political Science, Economics, English, Optional Subjects']
+                subjects: ['Science Stream: Physics, Chemistry, Mathematics/Biology, English, IT', 'Commerce Stream: Accountancy, Business Studies, Economics, English, Mathematics', 'Arts Stream: History, Political Science, Economics, English, Optional Subjects']
               }
             ].map((level, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
