@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Downloads = () => {
   const downloadItems = [
@@ -206,7 +205,7 @@ const Downloads = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 Office Hours
-              </h3>
+              </h3>   
               <div className="space-y-2 text-sm text-gray-700">
                 <p className="flex justify-between">
                   <span className="font-semibold">Monday - Friday:</span>

@@ -83,9 +83,28 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8  text-sm">
+        <div className="border-t border-gray-800 mt-8 pt-8 text-sm">
           <p className='text-left'>&copy; 2024 BITS International School. All rights reserved.</p>
-          <p className='text-right'>Website Designed & Developed by:</p>
+          <p className='text-right'>
+            Website Designed & Developed by:{' '}
+            <a
+              href="https://www.linkedin.com/in/FIRST_PERSON_ID"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline transition-colors duration-200"
+            >
+              Aryan
+            </a>
+            {' & '}
+            <a
+              href="https://www.linkedin.com/in/tanisha-garg-70116b313/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline transition-colors duration-200"
+            >
+              Tanisha
+            </a>
+          </p>
         </div>
       </div>
     </footer>
