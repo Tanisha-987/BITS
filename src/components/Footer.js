@@ -88,7 +88,7 @@ const Footer = () => {
           <p className='text-right'>
             Website Designed & Developed by:{' '}
             <a
-              href="https://www.linkedin.com/in/FIRST_PERSON_ID"
+              href="https://www.linkedin.com/in/aryansaini870/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 underline transition-colors duration-200"
