@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm">
-          <p className='text-left'>&copy; 2024 BITS International School. All rights reserved.</p>
+          <p className='text-left'>&copy; 2026 BITS International School. All rights reserved.</p>
           <p className='text-right'>
             Website Designed & Developed by:{' '}
             <a
