@@ -154,10 +154,10 @@ const Faculty = () => {
                     Faculty Name
                   </th>
                   <th className="px-4 py-4 text-left text-xs md:text-sm font-semibold uppercase tracking-wider">
-                    Designation
+                    Qualification
                   </th>
                   <th className="px-4 py-4 text-left text-xs md:text-sm font-semibold uppercase tracking-wider">
-                    Qualification
+                    Designation
                   </th>
                 </tr>
               </thead>
@@ -177,13 +177,13 @@ const Faculty = () => {
                         {teacher.name}
                       </span>
                     </td>
+                    <td className="px-4 py-4 text-gray-600 text-xs md:text-sm">
+                      {teacher.qualification}
+                    </td>
                     <td className="px-4 py-4">
                       <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-md text-xs md:text-sm font-medium">
                         {teacher.post}
                       </span>
-                    </td>
-                    <td className="px-4 py-4 text-gray-600 text-xs md:text-sm">
-                      {teacher.qualification}
                     </td>
                   </tr>
                 ))}

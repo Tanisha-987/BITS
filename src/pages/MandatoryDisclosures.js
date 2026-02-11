@@ -52,7 +52,7 @@ const MandatoryDisclosures = () => {
                   {[
                     { name: 'Mr. Sashi Ranjan parmar Ji', designation: 'Chairman' },
                     { name: 'Mr. Rishipal Ji', designation: 'Vice Chairman' },
-                    { name: 'Mr. Ashok Kumar Munjal', designation: 'Director' },
+                    { name: 'Mr. Ashok Kumar Munjal Ji', designation: 'Director' },
                   ].map((member, index) => (
                     <tr key={index} className="hover:bg-gray-50">
                       <td className="px-6 py-4 text-sm text-gray-700">{index + 1}</td>
