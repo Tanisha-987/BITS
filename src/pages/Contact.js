@@ -179,7 +179,7 @@ const Contact = () => {
               <div className="w-full h-full rounded-2xl overflow-hidden shadow-lg relative">
 
                 {/* Map iframe */}
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.913714246991!2d76.1525642!3d28.811645100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391266c1ac69cd27%3A0x11ea2af43dd3c24!2sBits%20International%20School!5e0!3m2!1sen!2sin!4v1770524370723!5m2!1sen!2sin" height="100%" width="100%"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe title='school location map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3495.913714246991!2d76.1525642!3d28.811645100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391266c1ac69cd27%3A0x11ea2af43dd3c24!2sBits%20International%20School!5e0!3m2!1sen!2sin!4v1770524370723!5m2!1sen!2sin" height="100%" width="100%"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
               </div>
 
