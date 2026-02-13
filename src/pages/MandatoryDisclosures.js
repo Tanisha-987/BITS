@@ -221,7 +221,7 @@ const MandatoryDisclosures = () => {
         </section>
 
         {/* Staff Details */}
-        <section className="mb-12 mt-12">
+        <section className="mb-12">
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-bold text-primary-800 mb-6">Staff Details</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -269,6 +269,18 @@ const MandatoryDisclosures = () => {
                 </div>
               ))}
             </div>
+
+            <div className="flex items-start gap-3 p-4 border-l-4 border-primary-500 bg-gray-50 rounded mt-12">
+                  <svg className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-1">Inspection Of School Covering Infrastructure</h4>
+                    <p className="text-sm text-gray-600">
+                      <a href="https://youtu.be/oIQdYUqNlvA?feature=shared" >click me</a>
+                    </p>
+                  </div>
+                </div>
           </div>
         </section>
 
