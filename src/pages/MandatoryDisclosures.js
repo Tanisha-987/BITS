@@ -181,7 +181,7 @@ const MandatoryDisclosures = () => {
         {/* downloads */}
         <section>
           <div className="bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-2xl font-bold text-primary-800 mb-6">Legal DOC</h2>
+            <h2 className="text-2xl font-bold text-primary-800 mb-6">Legal Documents</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {downloadItems.map((item, index) => (
@@ -283,7 +283,7 @@ const MandatoryDisclosures = () => {
                 {
                   title: 'Fire Safety Certificate',
                   status: 'Valid',
-                  validity: 'Valid till: March 2025',
+                  validity: 'Certified',
                   icon: (
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
@@ -293,7 +293,7 @@ const MandatoryDisclosures = () => {
                 {
                   title: 'Building Safety Certificate',
                   status: 'Valid',
-                  validity: 'Valid till: June 2025',
+                  validity: 'Certified',
                   icon: (
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -303,7 +303,7 @@ const MandatoryDisclosures = () => {
                 {
                   title: 'Health & Sanitation Certificate',
                   status: 'Valid',
-                  validity: 'Valid till: December 2024',
+                  validity: 'Certified',
                   icon: (
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -313,7 +313,7 @@ const MandatoryDisclosures = () => {
                 {
                   title: 'CCTV Surveillance',
                   status: 'Installed',
-                  validity: '80+ Cameras covering entire campus',
+                  validity: 'Certified',
                   icon: (
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -331,7 +331,7 @@ const MandatoryDisclosures = () => {
                           {cert.status}
                         </span>
                       </div>
-                      <p className="text-sm text-gray-600">{cert.validity}</p>
+                      <p className="text-sm text-gray-400 tracking-wide font-bold">{cert.validity}</p>
                     </div>
                   </div>
                 </div>
@@ -346,11 +346,11 @@ const MandatoryDisclosures = () => {
             <h2 className="text-2xl font-bold text-primary-800 mb-6">Academic Performance</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { year: '2024-25', class: 'Class X', percentage: '95.2%' },
-                { year: '2024-25', class: 'Class XII', percentage: '94.8%' },
-                { year: '2023-24', class: 'Class X', percentage: '94.5%' },
-                { year: '2023-24', class: 'Class XII', percentage: '93.9%' },
-                { year: '2022-23', class: 'Class X', percentage: '93.8%' },
+                { year: '2024-25', class: 'Class X', percentage: '100%' },
+                { year: '2024-25', class: 'Class XII', percentage: '100%' },
+                { year: '2023-24', class: 'Class X', percentage: '100%' },
+                { year: '2023-24', class: 'Class XII', percentage: '100%' },
+                { year: '2022-23', class: 'Class X', percentage: '100%' },
                 { year: '2022-23', class: 'Class XII', percentage: '99%' }
               ].map((result, index) => (
                 <div key={index} className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 text-center border-2 border-green-200">
