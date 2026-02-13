@@ -221,7 +221,7 @@ const MandatoryDisclosures = () => {
         </section>
 
         {/* Staff Details */}
-        <section className="mb-12">
+        <section className="mb-12 mt-12">
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-bold text-primary-800 mb-6">Staff Details</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
