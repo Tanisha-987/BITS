@@ -351,7 +351,7 @@ const MandatoryDisclosures = () => {
                 { year: '2023-24', class: 'Class X', percentage: '94.5%' },
                 { year: '2023-24', class: 'Class XII', percentage: '93.9%' },
                 { year: '2022-23', class: 'Class X', percentage: '93.8%' },
-                { year: '2022-23', class: 'Class XII', percentage: '92.5%' }
+                { year: '2022-23', class: 'Class XII', percentage: '99%' }
               ].map((result, index) => (
                 <div key={index} className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 text-center border-2 border-green-200">
                   <div className="text-sm text-gray-600 mb-2">{result.year}</div>
