@@ -249,16 +249,14 @@ const MandatoryDisclosures = () => {
             <h2 className="text-2xl font-bold text-primary-800 mb-6">Infrastructure Details</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { facility: 'Total Campus Area', details: '5 Acres' },
-                { facility: 'Total Built-up Area', details: '50,000 sq. ft.' },
-                { facility: 'Number of Classrooms', details: '45 (All Air-conditioned)' },
-                { facility: 'Science Laboratories', details: '3 (Physics, Chemistry, Biology)' },
-                { facility: 'Computer Lab', details: '2 Labs with 80 Computers' },
-                { facility: 'Library Books', details: '12,000+ Books' },
-                { facility: 'Sports Facilities', details: 'Football Ground, Basketball Court, Indoor Games' },
-                { facility: 'Auditorium Capacity', details: '500 Seats' },
-                { facility: 'Medical Room', details: 'Available with Nurse' },
-                { facility: 'Transport Facility', details: '15 Buses with GPS' }
+                { facility: 'Total Campus Area', details: '11400 sq. mtr' },
+                { facility: 'Classrooms Area', details: '53 sq. ft.' },
+                { facility: 'Laboratories Area', details: '67 sq. ft.' },
+                { facility: 'No. of Classrooms', details: '21' },
+                { facility: 'No. of Laboratories Including Computer Labs', details: '5' },
+                { facility: 'No. Of Girls Toilet', details: '10' },
+                { facility: 'No. Of Boys Toilet', details: '10' },
+                { facility: 'Internet Facilities', details: 'Yes' },
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3 p-4 border-l-4 border-primary-500 bg-gray-50 rounded">
                   <svg className="w-5 h-5 text-primary-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
