@@ -633,7 +633,7 @@ const MandatoryDisclosures = () => {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">1</td>
-                    <td className="px-6 py-4 text-gray-800 font-medium">2023-24</td>
+                    <td className="px-6 py-4 text-gray-800 font-medium">2022-23</td>
                     <td className="px-6 py-4 text-gray-800">58</td>
                     <td className="px-6 py-4 text-gray-800">56</td>
                     <td className="px-6 py-4 text-green-600 font-bold">96.55%</td>
@@ -641,18 +641,18 @@ const MandatoryDisclosures = () => {
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">2</td>
-                    <td className="px-6 py-4 text-gray-800 font-medium">2022-23</td>
-                    <td className="px-6 py-4 text-gray-800">145</td>
-                    <td className="px-6 py-4 text-gray-800">137</td>
-                    <td className="px-6 py-4 text-green-600 font-bold">94.5%</td>
+                    <td className="px-6 py-4 text-gray-800 font-medium">2023-24</td>
+                    <td className="px-6 py-4 text-gray-800">93</td>
+                    <td className="px-6 py-4 text-gray-800">93</td>
+                    <td className="px-6 py-4 text-green-600 font-bold">100%</td>
                     <td className="px-6 py-4 text-gray-600">Excellent</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">3</td>
-                    <td className="px-6 py-4 text-gray-800 font-medium">2021-22</td>
-                    <td className="px-6 py-4 text-gray-800">140</td>
-                    <td className="px-6 py-4 text-gray-800">131</td>
-                    <td className="px-6 py-4 text-green-600 font-bold">93.6%</td>
+                    <td className="px-6 py-4 text-gray-800 font-medium">2024-25</td>
+                    <td className="px-6 py-4 text-gray-800">81</td>
+                    <td className="px-6 py-4 text-gray-800">81</td>
+                    <td className="px-6 py-4 text-green-600 font-bold">100%</td>
                     <td className="px-6 py-4 text-gray-600">Very Good</td>
                   </tr>
                 </tbody>
@@ -682,7 +682,7 @@ const MandatoryDisclosures = () => {
                 <tbody className="divide-y divide-gray-200">
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">1</td>
-                    <td className="px-6 py-4 text-gray-800 font-medium">2023-24</td>
+                    <td className="px-6 py-4 text-gray-800 font-medium">2022-23</td>
                     <td className="px-6 py-4 text-gray-800">91</td>
                     <td className="px-6 py-4 text-gray-800">82</td>
                     <td className="px-6 py-4 text-green-600 font-bold">90.01%</td>
@@ -690,18 +690,18 @@ const MandatoryDisclosures = () => {
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">2</td>
-                    <td className="px-6 py-4 text-gray-800 font-medium">2022-23</td>
-                    <td className="px-6 py-4 text-gray-800">115</td>
-                    <td className="px-6 py-4 text-gray-800">108</td>
-                    <td className="px-6 py-4 text-green-600 font-bold">93.9%</td>
+                    <td className="px-6 py-4 text-gray-800 font-medium">2023-24</td>
+                    <td className="px-6 py-4 text-gray-800">72</td>
+                    <td className="px-6 py-4 text-gray-800">72</td>
+                    <td className="px-6 py-4 text-green-600 font-bold">100%</td>
                     <td className="px-6 py-4 text-gray-600">Excellent</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">3</td>
-                    <td className="px-6 py-4 text-gray-800 font-medium">2021-22</td>
-                    <td className="px-6 py-4 text-gray-800">110</td>
-                    <td className="px-6 py-4 text-gray-800">102</td>
-                    <td className="px-6 py-4 text-green-600 font-bold">92.7%</td>
+                    <td className="px-6 py-4 text-gray-800 font-medium">2024-25</td>
+                    <td className="px-6 py-4 text-gray-800">101</td>
+                    <td className="px-6 py-4 text-gray-800">98</td>
+                    <td className="px-6 py-4 text-green-600 font-bold">99%</td>
                     <td className="px-6 py-4 text-gray-600">Very Good</td>
                   </tr>
                 </tbody>
