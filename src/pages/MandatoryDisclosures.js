@@ -555,7 +555,7 @@ const MandatoryDisclosures = () => {
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">7</td>
                     <td className="px-6 py-4 text-gray-800">School Email ID</td>
-                    <td className="px-6 py-4 text-gray-900">bisbhiwani@gmail.com</td>
+                    <td className="px-6 py-4 text-gray-900"><a href='mailto:bisbhiwani@gmail.com'> bisbhiwani@gmail.com</a></td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">8</td>
@@ -836,7 +836,7 @@ const MandatoryDisclosures = () => {
               <table className="w-full">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th className="px-6 py-4 text-left font-semibold text-gray-700">S.No.</th>
+                    <th className="px-6 py-4 text-left font-semibold text-gray-700 ">S.No.</th>
                     <th className="px-6 py-4 text-left font-semibold text-gray-700">NAME</th>
                     <th className="px-6 py-4 text-left font-semibold text-gray-700">DESIGNATION</th>
                   </tr>
