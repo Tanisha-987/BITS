@@ -793,7 +793,7 @@ const MandatoryDisclosures = () => {
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">1</td>
                     <td className="px-6 py-4 text-gray-800">Principal</td>
-                    <td className="px-6 py-4 text-gray-900 font-medium">JAI PRAKASH</td>
+                    <td className="px-6 py-4 text-gray-900 font-medium">Mr. ASHOK KUMAR MUNJAL</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">2</td>
@@ -818,7 +818,7 @@ const MandatoryDisclosures = () => {
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">5</td>
                     <td className="px-6 py-4 text-gray-800">Details of Counsellor and Wellness Teacher</td>
-                    <td className="px-6 py-4 text-gray-900">Ms. Rupa</td>
+                    <td className="px-6 py-4 text-gray-900">Mr. Karan</td>
                   </tr>
                 </tbody>
               </table>
