@@ -206,7 +206,7 @@
 //                         href={item.file}
 //                         target="_blank"
 //                         rel="noopener noreferrer"
-//                         className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 group-hover:gap-3"
+//                         className="bg-primary-600 hover:bg-gradient-to-r from-primary-400 to-primary-900 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 group-hover:gap-3"
 //                       >
 //                         <span>click me</span>
 //                       </a>
@@ -500,7 +500,7 @@ const MandatoryDisclosures = () => {
   return (
     <div className="animate-fade-in">
       {/* Page Header */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-12">
+      <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Mandatory Public Disclosures</h1>
           <p className="text-lg opacity-90">As per CBSE guidelines and norms</p>
@@ -511,7 +511,7 @@ const MandatoryDisclosures = () => {
         {/* Section A: General Information */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-primary-700 text-white px-6 py-4">
+            <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white px-6 py-4">
               <h2 className="text-2xl font-bold">A. GENERAL INFORMATION</h2>
             </div>
             <div className="overflow-x-auto">
@@ -571,7 +571,7 @@ const MandatoryDisclosures = () => {
         {/* Section B: Documents and Information */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-primary-700 text-white px-6 py-4">
+            <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white px-6 py-4">
               <h2 className="text-2xl font-bold">B. DOCUMENTS AND INFORMATION</h2>
             </div>
             <div className="overflow-x-auto">
@@ -598,7 +598,7 @@ const MandatoryDisclosures = () => {
                           href={item.file}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                          className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-400 to-primary-900 hover:bg-gradient-to-r from-primary-400 to-primary-900 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                           
                           View PDF
@@ -615,7 +615,7 @@ const MandatoryDisclosures = () => {
         {/* Section C: Result and Academics */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-primary-700 text-white px-6 py-4">
+            <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white px-6 py-4">
               <h2 className="text-2xl font-bold">C. RESULT CLASS: X</h2>
             </div>
             <div className="overflow-x-auto">
@@ -664,7 +664,7 @@ const MandatoryDisclosures = () => {
         {/* Section D: Result Class XII */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-primary-700 text-white px-6 py-4">
+            <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white px-6 py-4">
               <h2 className="text-2xl font-bold">D. RESULT CLASS: XII</h2>
             </div>
             <div className="overflow-x-auto">
@@ -713,7 +713,7 @@ const MandatoryDisclosures = () => {
         {/* Section E: School Infrastructure */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-primary-700 text-white px-6 py-4">
+            <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white px-6 py-4">
               <h2 className="text-2xl font-bold">E. SCHOOL INFRASTRUCTURE</h2>
             </div>
             <div className="overflow-x-auto">
@@ -777,7 +777,7 @@ const MandatoryDisclosures = () => {
         {/* Section F: Staff Details */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-primary-700 text-white px-6 py-4">
+            <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white px-6 py-4">
               <h2 className="text-2xl font-bold">F. STAFF (TEACHING)</h2>
             </div>
             <div className="overflow-x-auto">
@@ -829,7 +829,7 @@ const MandatoryDisclosures = () => {
         {/* Section G: School Managing Committee */}
         <section className="mb-12">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-primary-700 text-white px-6 py-4">
+            <div className="bg-gradient-to-r from-primary-400 to-primary-900 text-white px-6 py-4">
               <h2 className="text-2xl font-bold">G. SCHOOL MANAGING COMMITTEE (SMC)</h2>
             </div>
             <div className="overflow-x-auto">
