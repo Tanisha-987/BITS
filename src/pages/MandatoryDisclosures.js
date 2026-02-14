@@ -637,7 +637,7 @@ const MandatoryDisclosures = () => {
                     <td className="px-6 py-4 text-gray-800">58</td>
                     <td className="px-6 py-4 text-gray-800">56</td>
                     <td className="px-6 py-4 text-green-600 font-bold">96.55%</td>
-                    <td className="px-6 py-4 text-gray-600">Excellent</td>
+                    <td className="px-6 py-4 text-gray-600">Very Good</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">2</td>
@@ -653,7 +653,7 @@ const MandatoryDisclosures = () => {
                     <td className="px-6 py-4 text-gray-800">81</td>
                     <td className="px-6 py-4 text-gray-800">81</td>
                     <td className="px-6 py-4 text-green-600 font-bold">100%</td>
-                    <td className="px-6 py-4 text-gray-600">Very Good</td>
+                    <td className="px-6 py-4 text-gray-600">Excellent</td>
                   </tr>
                 </tbody>
               </table>
