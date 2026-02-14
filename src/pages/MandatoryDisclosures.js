@@ -635,9 +635,9 @@ const MandatoryDisclosures = () => {
                     <td className="px-6 py-4 text-gray-600">1</td>
                     <td className="px-6 py-4 text-gray-800 font-medium">2022-23</td>
                     <td className="px-6 py-4 text-gray-800">58</td>
-                    <td className="px-6 py-4 text-gray-800">56</td>
-                    <td className="px-6 py-4 text-green-600 font-bold">96.55%</td>
-                    <td className="px-6 py-4 text-gray-600">Very Good</td>
+                    <td className="px-6 py-4 text-gray-800">58</td>
+                    <td className="px-6 py-4 text-green-600 font-bold">100%</td>
+                    <td className="px-6 py-4 text-gray-600">Excellent</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">2</td>
@@ -684,9 +684,9 @@ const MandatoryDisclosures = () => {
                     <td className="px-6 py-4 text-gray-600">1</td>
                     <td className="px-6 py-4 text-gray-800 font-medium">2022-23</td>
                     <td className="px-6 py-4 text-gray-800">91</td>
-                    <td className="px-6 py-4 text-gray-800">82</td>
-                    <td className="px-6 py-4 text-green-600 font-bold">90.01%</td>
-                    <td className="px-6 py-4 text-gray-600">Good</td>
+                    <td className="px-6 py-4 text-gray-800">90</td>
+                    <td className="px-6 py-4 text-green-600 font-bold">98.90%</td>
+                    <td className="px-6 py-4 text-gray-600">Excellent</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">2</td>
@@ -701,8 +701,8 @@ const MandatoryDisclosures = () => {
                     <td className="px-6 py-4 text-gray-800 font-medium">2024-25</td>
                     <td className="px-6 py-4 text-gray-800">101</td>
                     <td className="px-6 py-4 text-gray-800">98</td>
-                    <td className="px-6 py-4 text-green-600 font-bold">99%</td>
-                    <td className="px-6 py-4 text-gray-600">Very Good</td>
+                    <td className="px-6 py-4 text-green-600 font-bold">97.03%</td>
+                    <td className="px-6 py-4 text-gray-600">Excellent</td>
                   </tr>
                 </tbody>
               </table>
