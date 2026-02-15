@@ -7,9 +7,9 @@ import About from './pages/About';
 import Admissions from './pages/Admissions';
 import Academics from './pages/Academics';
 import Faculty from './pages/Faculty';
-// import Downloads from './pages/Downloads';
 import MandatoryDisclosures from './pages/MandatoryDisclosures';
 import Contact from './pages/Contact';
+import Slc from './pages/Slc';
 
 function App() {
   return (
@@ -24,9 +24,9 @@ function App() {
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/academics" element={<Academics />} />
             <Route path="/faculty" element={<Faculty />} />
-            {/* <Route path="/downloads" element={<Downloads />} /> */}
             <Route path="/mandatory-disclosures" element={<MandatoryDisclosures />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/slc" element={<Slc />} />
           </Routes>
         </main>
         <Footer />

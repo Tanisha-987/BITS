@@ -12,9 +12,9 @@ const Navigation = () => {
     { name: 'Admissions', path: '/admissions' },
     { name: 'Academics', path: '/academics' },
     { name: 'Faculty', path: '/faculty' },
-    // { name: 'Downloads', path: '/downloads' },
     { name: 'Mandatory Disclosures', path: '/mandatory-disclosures' },
     { name: 'Contact Us', path: '/contact' },
+    { name: 'SLC', path: '/slc' },
   ];
 
   const isActive = (path) => location.pathname === path;
