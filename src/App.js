@@ -10,10 +10,12 @@ import Faculty from './pages/Faculty';
 import MandatoryDisclosures from './pages/MandatoryDisclosures';
 import Contact from './pages/Contact';
 import Slc from './pages/Slc';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <div className="flex flex-col min-h-screen">
         <TopHeader />
         <Navigation />

@@ -129,12 +129,12 @@ const About = () => {
 
         {/* Management Message */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-primary-800 mb-6">Management's Message</h2>
+          <h2 className="text-3xl font-bold text-primary-800 mb-6">Administrative's Message</h2>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="lg:flex">
               <div className="md:w-1/3 bg-gradient-to-br from-primary-100 to-blue-100 p-8 flex flex-col items-center justify-center">
                 <img className="m-15px" src={about} alt="management"/>
-                <h4 className="text-xl font-bold text-primary-800">Management</h4>
+                <h4 className="text-xl font-bold text-primary-800">Administrative</h4>
               </div>
               <div className="md:w-2/3 p-8">
 
