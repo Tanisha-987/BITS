@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import slide1 from "../assets/2.jpg";
 import slide2 from "../assets/1.jpg";
 import slide3 from "../assets/3.jpg";
@@ -6,36 +7,45 @@ import slide4 from "../assets/4.jpeg";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   const slides = [
     {
-      title: 'Welcome to BITS International School',
-      subtitle: 'Building Tomorrow\'s Leaders Today',
+      title: 'BITS International School',
+      subtitle: 'Building tomorrow\'s leaders with excellence in learning',
       image: slide1
     },
     {
       title: 'Excellence in Education',
-      subtitle: 'CBSE Affiliated - Quality Learning',
+      subtitle: 'CBSE affiliated · Quality learning for every child',
       image: slide2
     },
     {
       title: 'Holistic Development',
-      subtitle: 'Nurturing Mind, Body & Spirit',
+      subtitle: 'Nurturing mind, body and character together',
       image: slide3
     },
     {
-      title: 'Holistic Development',
-      subtitle: 'Nurturing Mind, Body & Spirit',
+      title: 'A Campus That Inspires',
+      subtitle: 'Modern facilities, caring faculty, bright futures',
       image: slide4
     }
   ];
 
+  const goTo = useCallback((index) => {
+    setCurrentSlide((index + slides.length) % slides.length);
+  }, [slides.length]);
+
+  const nextSlide = useCallback(() => goTo(currentSlide + 1), [currentSlide, goTo]);
+  const prevSlide = useCallback(() => goTo(currentSlide - 1), [currentSlide, goTo]);
+
   useEffect(() => {
+    if (isPaused) return undefined;
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 5500);
     return () => clearInterval(timer);
-  }, [slides.length]);
+  }, [slides.length, isPaused]);
 
   const highlights = [
     {
@@ -79,47 +89,129 @@ const Home = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Carousel */}
-      <div className="relative h-96 md:h-[500px] overflow-hidden">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              currentSlide === index ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{
-              backgroundImage: `url(${slide.image})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            }}
-          >
-            {/* Dark overlay for better text visibility */}
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-            
-            <div className="container mx-auto px-4 h-full flex items-center justify-center relative z-10">
-              <div className="text-center text-white">
-                <h2 className="text-4xl md:text-6xl font-bold mb-4 animate-slide-in drop-shadow-lg">
-                  {slide.title}
-                </h2>
-                <p className="text-xl md:text-2xl opacity-90 drop-shadow-md">{slide.subtitle}</p>
+      <section
+        className="relative h-[70vh] min-h-[420px] max-h-[720px] md:h-[78vh] overflow-hidden group"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        aria-roledescription="carousel"
+        aria-label="School highlights"
+      >
+        {slides.map((slide, index) => {
+          const isActive = currentSlide === index;
+          return (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-out ${
+                isActive ? 'opacity-100 z-[1]' : 'opacity-0 z-0'
+              }`}
+              aria-hidden={!isActive}
+            >
+              <div
+                className={`absolute inset-0 bg-cover bg-center transition-transform duration-[8000ms] ease-out ${
+                  isActive ? 'scale-110' : 'scale-100'
+                }`}
+                style={{ backgroundImage: `url(${slide.image})` }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-950/85 via-primary-900/55 to-black/35" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
+
+              <div className="container mx-auto px-4 h-full flex items-center relative z-10">
+                <div
+                  className={`max-w-3xl text-white transition-all duration-700 ${
+                    isActive
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 translate-y-6'
+                  }`}
+                >
+                  <p className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-primary-200 mb-4">
+                    <span className="w-8 h-px bg-primary-300" />
+                    CBSE Affiliated
+                  </p>
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-4 drop-shadow-lg">
+                    {slide.title}
+                  </h1>
+                  <p className="text-lg md:text-2xl text-white/90 mb-8 max-w-xl leading-relaxed drop-shadow-md">
+                    {slide.subtitle}
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    <Link
+                      to="/admissions"
+                      className="inline-flex items-center gap-2 bg-white text-primary-800 hover:bg-primary-50 px-6 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+                    >
+                      Apply for Admission
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </Link>
+                    <Link
+                      to="/about"
+                      className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/40 text-white hover:bg-white/20 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-0.5"
+                    >
+                      Explore Campus
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
+          );
+        })}
+
+        {/* Nav arrows */}
+        <button
+          type="button"
+          onClick={prevSlide}
+          aria-label="Previous slide"
+          className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white flex items-center justify-center opacity-80 md:opacity-0 md:group-hover:opacity-100 focus:opacity-100 transition-all duration-300 hover:bg-white/25 hover:scale-105"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          onClick={nextSlide}
+          aria-label="Next slide"
+          className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white flex items-center justify-center opacity-80 md:opacity-0 md:group-hover:opacity-100 focus:opacity-100 transition-all duration-300 hover:bg-white/25 hover:scale-105"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Slide indicators + progress */}
+        <div className="absolute bottom-6 md:bottom-8 left-0 right-0 z-20 px-4">
+          <div className="container mx-auto flex items-center justify-between gap-4">
+            <div className="hidden sm:block text-white/80 text-sm font-medium tracking-wide">
+              <span className="text-white font-bold">{String(currentSlide + 1).padStart(2, '0')}</span>
+              <span className="mx-2 text-white/40">/</span>
+              <span>{String(slides.length).padStart(2, '0')}</span>
+            </div>
+            <div className="flex justify-center gap-2 flex-1 sm:flex-none">
+              {slides.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => setCurrentSlide(index)}
+                  aria-label={`Go to slide ${index + 1}`}
+                  aria-current={currentSlide === index}
+                  className={`relative h-1.5 rounded-full overflow-hidden transition-all duration-500 ${
+                    currentSlide === index ? 'w-10 bg-white/30' : 'w-2.5 bg-white/40 hover:bg-white/70'
+                  }`}
+                >
+                  {currentSlide === index && (
+                    <span
+                      key={`progress-${currentSlide}-${isPaused}`}
+                      className={`absolute inset-y-0 left-0 bg-white rounded-full ${
+                        isPaused ? 'w-full' : 'animate-banner-progress'
+                      }`}
+                    />
+                  )}
+                </button>
+              ))}
+            </div>
           </div>
-        ))}
-        
-        {/* Slide indicators */}
-        <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                currentSlide === index ? 'bg-white w-8' : 'bg-white/50'
-              }`}
-            />
-          ))}
         </div>
-      </div>
+      </section>
 
       {/* Welcome Section */}
       <div className="container mx-auto px-4 py-16">
