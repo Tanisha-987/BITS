@@ -1,7 +1,9 @@
+import { useState, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TopHeader from './components/TopHeader';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import Preloader from './components/Preloader';
 import Home from './pages/Home';
 import About from './pages/About';
 import Admissions from './pages/Admissions';
@@ -13,9 +15,13 @@ import Slc from './pages/Slc';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+  const [showPreloader, setShowPreloader] = useState(true);
+  const handlePreloaderDone = useCallback(() => setShowPreloader(false), []);
+
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
+      {showPreloader && <Preloader onComplete={handlePreloaderDone} />}
       <div className="flex flex-col min-h-screen">
         <TopHeader />
         <Navigation />

@@ -36,6 +36,27 @@
   .animate-banner-progress {
     animation: bannerProgress 5.5s linear forwards;
   }
+
+  .animate-preloader-spin {
+    animation: preloaderSpin 1.2s linear infinite;
+  }
+
+  .animate-preloader-spin-slow {
+    animation: preloaderSpin 8s linear infinite;
+  }
+
+  .animate-preloader-spin-reverse {
+    animation: preloaderSpinReverse 4s linear infinite;
+  }
+
+  .animate-preloader-pulse {
+    animation: preloaderPulse 2.2s ease-in-out infinite;
+  }
+
+  .animate-preloader-dots::after {
+    content: '';
+    animation: preloaderDots 1.4s steps(4, end) infinite;
+  }
   
   @keyframes fadeIn {
     from {
@@ -85,6 +106,44 @@
     }
     to {
       width: 100%;
+    }
+  }
+
+  @keyframes preloaderSpin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes preloaderSpinReverse {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes preloaderPulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
+    }
+    50% {
+      transform: scale(1.04);
+      box-shadow: 0 24px 48px rgba(59, 130, 246, 0.35);
+    }
+  }
+
+  @keyframes preloaderDots {
+    0% {
+      content: '';
+    }
+    25% {
+      content: '.';
+    }
+    50% {
+      content: '..';
+    }
+    75%, 100% {
+      content: '...';
     }
   }
 }
