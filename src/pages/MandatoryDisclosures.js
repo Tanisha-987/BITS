@@ -560,7 +560,7 @@ const MandatoryDisclosures = () => {
                   <tr className="hover:bg-gray-50">
                     <td className="px-6 py-4 text-gray-600">8</td>
                     <td className="px-6 py-4 text-gray-800">Contact No.</td>
-                    <td className="px-6 py-4 text-gray-900">+91 8199928253</td>
+                    <td className="px-6 py-4 text-gray-900"><a href="tel:+919812526326">+91 9812526326</a></td>
                   </tr>
                 </tbody>
               </table>
