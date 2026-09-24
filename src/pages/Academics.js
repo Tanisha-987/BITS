@@ -95,11 +95,24 @@ const Academics = () => {
           </div>
         </section>
 
-        {/* Curriculum PDFs */}
+        {/* CBSE Curriculum + class-wise documents */}
         <section className="mb-16">
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-primary-800 mb-2">Curriculum</h2>
+            <h2 className="text-3xl font-bold text-primary-800 mb-2">CBSE Curriculum</h2>
             <p className="text-gray-600">Class-wise curriculum documents — view online or download</p>
+          </div>
+          <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-lg transition-shadow mb-8">
+            <p className="text-gray-700 leading-relaxed mb-4">
+              BITS International School follows the Central Board of Secondary Education (CBSE) curriculum,
+              which is designed to provide a balanced and holistic education. Our curriculum
+              emphasizes conceptual understanding, critical thinking, and practical application
+              of knowledge.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              We integrate innovative teaching methodologies, technology-enabled learning, and
+              student-centric approaches to ensure that every child receives quality education
+              aligned with national standards.
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {curriculumPdfs.map((item, index) => (
@@ -118,24 +131,6 @@ const Academics = () => {
             {academicDocs.map((item, index) => (
               <PdfCard key={item.title} {...item} delay={index * 80} />
             ))}
-          </div>
-        </section>
-
-        {/* Curriculum Overview */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-primary-800 mb-6">CBSE Curriculum</h2>
-          <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-lg transition-shadow">
-            <p className="text-gray-700 leading-relaxed mb-4">
-              BITS International School follows the Central Board of Secondary Education (CBSE) curriculum,
-              which is designed to provide a balanced and holistic education. Our curriculum
-              emphasizes conceptual understanding, critical thinking, and practical application
-              of knowledge.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              We integrate innovative teaching methodologies, technology-enabled learning, and
-              student-centric approaches to ensure that every child receives quality education
-              aligned with national standards.
-            </p>
           </div>
         </section>
 

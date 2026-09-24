@@ -111,7 +111,8 @@ const Contact = () => {
               height="100%"
               width="100%"
               className="border-0"
-              allowFullScreen=""
+              allow="geolocation; fullscreen; accelerometer; gyroscope; clipboard-write"
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
