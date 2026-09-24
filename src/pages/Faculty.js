@@ -1,125 +1,43 @@
 const Faculty = () => {
   const teachers = [
-    {
-      name: 'ASHOK KUMAR MUNJAL',
-      post: 'Principal',
-      qualification: 'M.A., B.Ed., Ph.D.'
-    },
-    {
-      name: 'SONIA',
-      post: 'PGT',
-      qualification: 'M.Com, B.Ed'
-    },
-    {
-      name: 'EKTA SHARMA',
-      post: 'PGT',
-      qualification: 'M.Sc, B.Ed'
-    },
-    {
-      name: 'SABHYA',
-      post: 'PGT',
-      qualification: 'M.Sc, B.Ed'
-    },
-    {
-      name: 'ASHA',
-      post: 'PGT',
-      qualification: 'M.A, B.Ed'
-    },
-    {
-      name: 'PRATIBHA',
-      post: 'PGT',
-      qualification: 'M.C.A , B.Ed.'
-    },
-    {
-      name: 'JYOTI RANI',
-      post: 'PGT',
-      qualification: 'M.Sc, B.Ed'
-    },
-    {
-      name: 'Chahat',
-      post: 'PGT',
-      qualification: 'M.Sc, B.Ed'
-    },
-    {
-      name: 'VINITA',
-      post: 'PGT',
-      qualification: 'M.A., B.Ed.'
-    },
-    {
-      name: 'GOLDI SINGH',
-      post: 'TGT',
-      qualification: 'M.A., B.Ed.'
-    },
-    {
-      name: 'SANJANA',
-      post: 'PGT',
-      qualification: 'M.Sc, B.Ed'
-    },
-    {
-      name: 'YAMAN',
-      post: 'PGT',
-      qualification: 'M.Com ,B.Ed'
-    },
-    {
-      name: 'ANJU',
-      post: 'PGT',
-      qualification: 'M.Sc, B.Ed'
-    },
-    {
-      name: 'NEELAM DEVI',
-      post: 'PRT',
-      qualification: 'M.A., B.Ed.'
-    },
-    {
-      name: 'MONIKA',
-      post: 'PRT',
-      qualification: 'M.A, B.Ed'
-    },
-    {
-      name: 'SUVEKA',
-      post: 'PRT',
-      qualification: 'M.Com, B.Ed.'
-    },
-    {
-      name: 'MEENAKSHI',
-      post: 'PRT',
-      qualification: 'B.A., B.Ed.'
-    },
-    {
-      name: 'ANITA TANWAR',
-      post: 'PGT',
-      qualification: 'M.A., B.Ed.'
-    },
-    {
-      name: 'BABITA',
-      post: 'TGT',
-      qualification: 'M.C.A'
-    },
-    {
-      name: 'SHALINI',
-      post: 'TGT',
-      qualification: 'M.A., B.Ed.'
-    },
-    {
-      name: 'JYOTI',
-      post: 'PGT',
-      qualification: 'M.A., B.Ed.'
-    },
-    {
-      name: 'KARAN',
-      post: 'WELLNEES TEACHER',
-      qualification: 'B. pharma'
-    },
-    {
-      name: 'MANJU KUMARI',
-      post: 'ACCOUNTANT',
-      qualification: 'MBA'
-    },
-    {
-      name: 'SANJAY KUMAR',
-      post: 'LIBRARIAN',
-      qualification: 'M.LIB'
-    }
+    { name: 'ASHOK KUMAR MUNJAL', post: 'Principal', qualification: 'M.A., B.Ed.' },
+    { name: 'WARSHA RANI', post: 'PGT', qualification: 'M.A., B.Ed.' },
+    { name: 'YAMAN', post: 'PGT', qualification: 'M.Com., B.Ed.' },
+    { name: 'SANJANA', post: 'PGT', qualification: 'M.Sc., B.Ed.' },
+    { name: 'SONIA', post: 'PGT', qualification: 'M.A., B.Ed.' },
+    { name: 'EKTA SHARMA', post: 'PGT', qualification: 'M.Sc., B.Ed.' },
+    { name: 'SABHYA', post: 'PGT', qualification: 'M.Sc., B.Ed.' },
+    { name: 'ASHA', post: 'PGT', qualification: 'M.A., B.Ed.' },
+    { name: 'JYOTI', post: 'PGT', qualification: 'M.A., B.Ed.' },
+    { name: 'PRATIBHA', post: 'PGT', qualification: 'M.C.A., B.Ed.' },
+    { name: 'JYOTI RANI', post: 'PGT', qualification: 'M.Sc., B.Ed.' },
+    { name: 'CHAHAT', post: 'PGT', qualification: 'M.Sc., B.Ed.' },
+    { name: 'VINITA', post: 'PGT', qualification: 'M.A., B.Ed.' },
+    { name: 'NANCY', post: 'TGT', qualification: 'M.A., B.Ed.' },
+    { name: 'HARISH KUMAR', post: 'TGT', qualification: 'B.A., B.Ed.' },
+    { name: 'GEETA RANI', post: 'TGT', qualification: 'B.A., B.Ed.' },
+    { name: 'SUSHMA RANI', post: 'TGT', qualification: 'M.A., B.Ed.' },
+    { name: 'GOLDI SINGH', post: 'TGT', qualification: 'M.A., B.Ed.' },
+    { name: 'BABITA', post: 'TGT', qualification: 'M.C.A.' },
+    { name: 'SHALINI', post: 'TGT', qualification: 'M.A., B.Ed.' },
+    { name: 'POOJA SHARMA', post: 'TGT', qualification: 'M.A., B.Ed.' },
+    { name: 'ARPITA', post: 'TGT', qualification: 'M.Sc., B.Ed.' },
+    { name: 'VARSHA', post: 'PRT', qualification: 'B.A., B.Ed.' },
+    { name: 'MEENU', post: 'PRT', qualification: 'M.A., B.Ed.' },
+    { name: 'RAJ KUMARI', post: 'PRT', qualification: 'B.A., B.Ed.' },
+    { name: 'NEELAM DEVI', post: 'PRT', qualification: 'M.A., B.Ed.' },
+    { name: 'MONIKA', post: 'PRT', qualification: 'M.A., B.Ed.' },
+    { name: 'ANJU', post: 'PRT', qualification: 'M.A., B.Ed.' },
+    { name: 'MEENAKSHI', post: 'PRT', qualification: 'M.A., B.Ed.' },
+    { name: 'SHEVETA', post: 'NTT', qualification: 'NTT' },
+    { name: 'NISHA RANI', post: 'NTT', qualification: 'NTT' },
+    { name: 'ANITA TANWAR', post: 'NTT', qualification: 'M.A., NTT' },
+    { name: 'MANJU KUMARI', post: 'Career Counselor', qualification: 'M.B.A.' },
+    { name: 'NISHA', post: 'Wellness Teacher', qualification: 'M.Sc., B.Ed.' },
+    { name: 'KARAN', post: 'Wellness Teacher', qualification: 'B.Pharma' },
+    { name: 'SANJAY KUMAR', post: 'Librarian', qualification: 'M.A., B.Ed., M.Lib.' },
+    { name: 'SUNIL', post: 'Other', qualification: 'N.A.' },
+    { name: 'PRADEEP KUMAR', post: 'Clerk', qualification: 'B.A.' }
   ];
 
   return (
