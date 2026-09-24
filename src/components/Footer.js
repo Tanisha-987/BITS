@@ -49,10 +49,10 @@ const Footer = () => {
       <div className="absolute -top-24 -right-24 w-80 h-80 bg-primary-500/20 rounded-full blur-3xl" />
       <div className="absolute -bottom-32 -left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-4 pt-14 pb-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
+      <div className="container mx-auto px-4 pt-10 sm:pt-14 pb-8 relative z-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 lg:gap-8 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1">
             <Link to="/" className="inline-flex items-center gap-3 mb-5 group">
               <div className="w-14 h-14 rounded-full bg-white p-1.5 shadow-lg group-hover:scale-105 transition-transform">
                 <img src={logo} alt="BITS logo" className="w-full h-full object-contain rounded-full" />
@@ -147,7 +147,7 @@ const Footer = () => {
           </div>
 
           {/* Hours / CTA */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <h3 className="text-white text-sm font-bold uppercase tracking-wider mb-5 flex items-center gap-2">
               <span className="w-6 h-0.5 bg-primary-400 rounded-full" />
               Office Hours

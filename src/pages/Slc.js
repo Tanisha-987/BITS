@@ -58,7 +58,7 @@ const Slc = () => {
             <p className="text-gray-600">Open online or download for your records</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+          <div className="grid grid-cols-2 gap-3 sm:gap-8 max-w-4xl">
             {slcDocs.map((item, index) => (
               <PdfCard key={item.title} {...item} delay={index * 120} />
             ))}

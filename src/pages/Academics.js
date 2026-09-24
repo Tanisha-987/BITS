@@ -77,7 +77,7 @@ const Academics = () => {
 
           <div className="relative bg-gradient-to-br from-primary-50 via-white to-blue-50 rounded-3xl p-6 md:p-10 border border-primary-100 shadow-lg overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary-200/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 relative">
               {calendarEvents.map((event, index) => (
                 <div
                   key={index}
@@ -114,7 +114,7 @@ const Academics = () => {
               aligned with national standards.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6">
             {curriculumPdfs.map((item, index) => (
               <PdfCard key={item.title} {...item} delay={index * 60} />
             ))}
@@ -127,7 +127,7 @@ const Academics = () => {
             <h2 className="text-3xl font-bold text-primary-800 mb-2">Important Documents</h2>
             <p className="text-gray-600">Book lists, fee rules, reports and circulars</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {academicDocs.map((item, index) => (
               <PdfCard key={item.title} {...item} delay={index * 80} />
             ))}
@@ -137,7 +137,7 @@ const Academics = () => {
         {/* Academic Levels */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-primary-800 mb-6">Academic Levels</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-3 sm:gap-8">
             {[
               {
                 title: 'Primary Level (Classes I-V)',
@@ -244,7 +244,7 @@ const Academics = () => {
             We believe in holistic development and offer a wide range of co-curricular activities
             to nurture talents and develop well-rounded personalities.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6">
             {[
               {
                 category: 'Sports',

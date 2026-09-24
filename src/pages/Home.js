@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import slide1 from '../assets/2.jpg';
 import slide2 from '../assets/1.jpg';
@@ -9,6 +9,7 @@ import aboutImg from '../assets/about.jpg';
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const touchStartX = useRef(null);
 
   const slides = [
     {
@@ -42,6 +43,20 @@ const Home = () => {
 
   const nextSlide = useCallback(() => goTo(currentSlide + 1), [currentSlide, goTo]);
   const prevSlide = useCallback(() => goTo(currentSlide - 1), [currentSlide, goTo]);
+
+  const onTouchStart = (event) => {
+    touchStartX.current = event.changedTouches[0].clientX;
+    setIsPaused(true);
+  };
+
+  const onTouchEnd = (event) => {
+    if (touchStartX.current == null) return;
+    const distance = event.changedTouches[0].clientX - touchStartX.current;
+    touchStartX.current = null;
+    if (distance <= -45) nextSlide();
+    else if (distance >= 45) prevSlide();
+    setIsPaused(false);
+  };
 
   useEffect(() => {
     if (isPaused) return undefined;
@@ -107,9 +122,11 @@ const Home = () => {
     <div className="animate-fade-in bg-slate-50">
       {/* Hero Carousel */}
       <section
-        className="relative h-[70vh] min-h-[420px] max-h-[720px] md:h-[78vh] overflow-hidden group"
+        className="relative h-[68vh] min-h-[360px] max-h-[720px] md:h-[78vh] overflow-hidden group touch-pan-y"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
         aria-roledescription="carousel"
         aria-label="School highlights"
       >
@@ -142,7 +159,7 @@ const Home = () => {
                     <span className="w-8 h-px bg-primary-300" />
                     CBSE Affiliated
                   </p>
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-4 drop-shadow-lg">
+                  <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-4 drop-shadow-lg">
                     {slide.title}
                   </h1>
                   <p className="text-lg md:text-2xl text-white/90 mb-8 max-w-xl leading-relaxed drop-shadow-md">
@@ -175,7 +192,7 @@ const Home = () => {
           type="button"
           onClick={prevSlide}
           aria-label="Previous slide"
-          className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white flex items-center justify-center opacity-80 md:opacity-0 md:group-hover:opacity-100 focus:opacity-100 transition-all duration-300 hover:bg-white/25 hover:scale-105"
+          className="hidden md:flex absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white items-center justify-center md:opacity-0 md:group-hover:opacity-100 focus:opacity-100 transition-all duration-300 hover:bg-white/25 hover:scale-105"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -185,7 +202,7 @@ const Home = () => {
           type="button"
           onClick={nextSlide}
           aria-label="Next slide"
-          className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white flex items-center justify-center opacity-80 md:opacity-0 md:group-hover:opacity-100 focus:opacity-100 transition-all duration-300 hover:bg-white/25 hover:scale-105"
+          className="hidden md:flex absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white items-center justify-center md:opacity-0 md:group-hover:opacity-100 focus:opacity-100 transition-all duration-300 hover:bg-white/25 hover:scale-105"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -305,18 +322,18 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {highlights.map((item, index) => (
               <div
                 key={item.title}
-                className="group relative bg-white rounded-2xl p-6 border border-primary-100/80 shadow-md hover:shadow-2xl hover:shadow-primary-900/10 hover:-translate-y-1.5 transition-all duration-400 overflow-hidden animate-fade-up"
+                className="group relative bg-white rounded-2xl p-4 sm:p-6 border border-primary-100/80 shadow-md hover:shadow-2xl hover:shadow-primary-900/10 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden animate-fade-up"
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary-400 to-primary-700 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-800 text-white flex items-center justify-center mb-5 shadow-lg shadow-primary-700/30 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-bold text-primary-950 mb-2 group-hover:text-primary-700 transition-colors">
+                <h3 className="text-base sm:text-xl font-bold text-primary-950 mb-2 group-hover:text-primary-700 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
@@ -373,12 +390,14 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary-950 mb-3">Explore Next</h2>
             <p className="text-gray-600">Quick links to what parents and students look for most.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
             {pathways.map((item, index) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className="group relative bg-white rounded-2xl p-7 border border-primary-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden animate-fade-up"
+                className={`group relative bg-white rounded-2xl p-4 sm:p-7 border border-primary-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden animate-fade-up ${
+                  index === pathways.length - 1 ? 'col-span-2 md:col-span-1' : ''
+                }`}
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

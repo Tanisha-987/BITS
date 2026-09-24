@@ -167,8 +167,8 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-primary-950">Vision & Mission</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            <div className="group relative bg-white rounded-3xl p-8 border border-primary-100 shadow-md hover:shadow-2xl hover:shadow-primary-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden animate-fade-up">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8">
+            <div className="group relative bg-white rounded-3xl p-4 sm:p-8 border border-primary-100 shadow-md hover:shadow-2xl hover:shadow-primary-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden animate-fade-up">
               <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-primary-400 to-primary-700" />
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-800 text-white flex items-center justify-center mb-6 shadow-lg shadow-primary-700/30">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -184,7 +184,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="group relative bg-white rounded-3xl p-8 border border-primary-100 shadow-md hover:shadow-2xl hover:shadow-primary-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden animate-fade-up" style={{ animationDelay: '100ms' }}>
+            <div className="group relative bg-white rounded-3xl p-4 sm:p-8 border border-primary-100 shadow-md hover:shadow-2xl hover:shadow-primary-900/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden animate-fade-up" style={{ animationDelay: '100ms' }}>
               <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-primary-600 to-primary-900" />
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-600 to-primary-950 text-white flex items-center justify-center mb-6 shadow-lg shadow-primary-800/30">
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -351,7 +351,7 @@ const About = () => {
             <p className="text-gray-600">Spaces designed for learning, discovery and growth.</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {facilities.map((facility, index) => (
               <div
                 key={facility.title}

@@ -31,7 +31,7 @@ const Admissions = () => {
         {/* Classes Offered */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-primary-800 mb-6">Classes Offered</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {[
               { level: 'Nursery to UKG', description: 'Pre-Primary Education' },
               { level: 'Class I to V', description: 'Primary Level' },
