@@ -425,8 +425,8 @@ const MandatoryDisclosures = () => {
     },
     {
       title: 'Managing Committee',
-      description: 'School managing committee details',
-      size: '125 KB',
+      description: 'Approved school managing committee',
+      size: '292 KB',
       format: 'PDF',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -437,8 +437,8 @@ const MandatoryDisclosures = () => {
     },
     {
       title: 'Building Safety Certificate',
-      description: 'Building safety compliance certificate',
-      size: '520 KB',
+      description: 'PWD structure safety certificate, valid from 24.08.2026 for one year',
+      size: '441 KB',
       format: 'PDF',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -449,8 +449,8 @@ const MandatoryDisclosures = () => {
     },
     {
       title: 'Sanitation & Hygiene Certificate',
-      description: 'Sanitation and hygiene compliance',
-      size: '890 KB',
+      description: 'Sanitation and hygiene certificate, valid 11.07.2026 to 10.07.2027',
+      size: '200 KB',
       format: 'PDF',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -473,8 +473,8 @@ const MandatoryDisclosures = () => {
     },
     {
       title: 'Water Quality Certificate',
-      description: 'Water quality test certificate',
-      size: '410 KB',
+      description: 'Safe drinking water and sanitary condition certificate dated 29.09.2026',
+      size: '1.0 MB',
       format: 'PDF',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -842,21 +842,22 @@ const MandatoryDisclosures = () => {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-gray-600">1</td>
-                    <td className="px-6 py-4 text-gray-900 font-medium">Mr. Sashi Ranjan parmar Ji</td>
-                    <td className="px-6 py-4 text-gray-800">Chairperson</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-gray-600">2</td>
-                    <td className="px-6 py-4 text-gray-900 font-medium">Mr. Rishipal Ji</td>
-                    <td className="px-6 py-4 text-gray-800">Vice Chairperson</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50">
-                    <td className="px-6 py-4 text-gray-600">3</td>
-                    <td className="px-6 py-4 text-gray-900 font-medium">Mr. Ashok Kumar Munjal Ji</td>
-                    <td className="px-6 py-4 text-gray-800">Director</td>
-                  </tr>
+                  {[
+                    { name: 'Sh. Shashi Ranjan Parmar', designation: 'Chairman' },
+                    { name: 'Sh. Lakshay Parmar', designation: 'Vice-Chairman' },
+                    { name: 'Sh. Ashok Kumar Munjal', designation: 'Principal (Ex-Officio Member)' },
+                    { name: 'Sh. Vinay Sharma', designation: 'Educationist' },
+                    { name: 'Smt. Chahat', designation: 'Teacher Representative' },
+                    { name: 'Smt. Manju Kumari', designation: 'Parents Representative' },
+                    { name: 'Dr. Reema Parmar', designation: 'Female Representative' },
+                    { name: 'Sarpanch, Gram Panchayat Paluwas', designation: 'Ex-Officio Member' },
+                  ].map((member, index) => (
+                    <tr key={member.name} className="hover:bg-gray-50">
+                      <td className="px-6 py-4 text-gray-600">{index + 1}</td>
+                      <td className="px-6 py-4 text-gray-900 font-medium">{member.name}</td>
+                      <td className="px-6 py-4 text-gray-800">{member.designation}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>

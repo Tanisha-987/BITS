@@ -23,8 +23,10 @@ function App() {
       <ScrollToTop />
       {showPreloader && <Preloader onComplete={handlePreloaderDone} />}
       <div className="flex flex-col min-h-screen">
-        <TopHeader />
-        <Navigation />
+        <header className="sticky top-0 z-50">
+          <TopHeader />
+          <Navigation />
+        </header>
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

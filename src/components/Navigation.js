@@ -34,7 +34,7 @@ const Navigation = () => {
   }, [isOpen]);
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-white shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-3 sm:py-4 gap-3">
           <Link to="/" className="flex items-center gap-2 sm:gap-3 min-w-0" onClick={closeMenu}>
