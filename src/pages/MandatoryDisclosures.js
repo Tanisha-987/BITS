@@ -402,7 +402,7 @@ const MandatoryDisclosures = () => {
     {
       title: 'Fee Structure 2026-27',
       description: 'Complete fee structure for all classes',
-      size: '180 KB',
+      size: '149 KB',
       format: 'PDF',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
