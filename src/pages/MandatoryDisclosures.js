@@ -400,7 +400,7 @@ const MandatoryDisclosures = () => {
       file: '/downloads/recognition.pdf'
     },
     {
-      title: 'Fee Structure 2024-25',
+      title: 'Fee Structure 2026-27',
       description: 'Complete fee structure for all classes',
       size: '180 KB',
       format: 'PDF',
